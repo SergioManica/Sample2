@@ -1,0 +1,74 @@
+<div class="unselectable">
+    <div class="breadcrumb">
+        <span>Instructor</span>
+        <span>▶️</span>
+        <span>Crear curso</span>
+    </div>
+</div>
+<div class="cardContainer unselectable">
+    <span style="display: flex; flex-direction: column">
+        <div class="card" style="
+          justify-content: space-between;min-height: 100px;margin-bottom: 21px;">
+            <input type="text" placeholder="Escribe aquí el nombre del curso" class="unstyledInput" />
+            <span class="characterCounter">0/100</span>
+        </div>
+        <div class="card" style="
+          min-height: 280px;justify-content: space-between;margin-bottom: 21px;">
+            <input type="text" placeholder="Escribe aquí la descripción del curso" class="unstyledInput" />
+            <span class="characterCounter">0/500</span>
+        </div>
+        <div class="card" style="flex: 1">
+            <div style="margin-bottom: 14px">
+                Selecciona las categorías a las que el curso pertenece
+            </div>
+            <div class="categoryContainer" style="overflow: auto">
+                <span *ngFor="let category of categories" class="pillContainer">{{category}}</span>
+            </div>
+        </div>
+    </span>
+    <span>
+        <div class="card" style="height: 100%">
+            <div class="courseCover" style="background-image: url('assets/images/01.jpg')"></div>
+            <div class="pillContainer" style="width: 100%; margin: 14px 0">
+                <span style="
+              background-color: rgba(255, 255, 255, 0.7);border-radius: 49px;padding: 3px;margin-right: 14px;">🔍
+              </span>
+                <input type="text" placeholder="Escribe aquí el nombre del curso" class="unstyledInput" />
+            </div>
+            <div class="gallery">
+                <span *ngFor="let item of [].constructor(10)" class="courseCover" style="
+              background-image: url('assets/images/01.jpg');min-height: 90px;max-height: 90px;min-width: 185px;max-width:
+               160px;display: flex;border-radius: 14px;">
+              </span>
+            </div>
+        </div>
+    </span>
+    <span>
+        <div class="card" style="height: 100%">
+            <div style="margin-bottom: 21px">Generar contenido</div>
+            <div>
+                <div *ngFor="let createCourseOption of createCourseOptions" class="pillContainer" style="
+                    width: 100%;margin-bottom: 21px;justify-content: left;cursor: pointer;">
+                    <span style="margin-right: 21px">➡️</span>
+                    <span>{{ createCourseOption }}</span>
+                </div>
+            </div>
+        </div>
+    </span>
+</div>
+<!-- <div class="unselectable" style="display: flex; padding: 0 28px; box-sizing: border-box">
+    <span class="bottomOptionsContainer">
+        <span><a class="icons" href="administrator-course"><fa-icon [icon]="faChalkBoardIcon"></fa-icon></a></span>
+        <span class="icons"><fa-icon [icon]="faCirclePlusIcon"></fa-icon></span>
+        <span class="icons"><a href="dashboard" class="icons"><fa-icon [icon]="faBookIcon"></fa-icon></a></span>
+    </span>
+    <span class="bottomOptionsContainer ">
+        <span>Detalles</span>
+        <span>Secciones</span>
+        <span>Grupos</span>
+    </span>
+    <span class="bottomOptionsContainer" style="margin-left: auto">
+        <span><a class="icons2"  href="login-course"><fa-icon [icon]="faCircleUserIcon"></fa-icon></a></span>
+        <span class="icons2"><fa-icon [icon]="faRightFromBracketIncon"></fa-icon></span>
+    </span>
+</div> -->

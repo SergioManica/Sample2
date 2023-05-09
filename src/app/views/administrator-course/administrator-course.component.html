@@ -1,0 +1,86 @@
+<div class="unselectable">
+    <div class="breadcrumb opacityText">
+        <span>Administrador</span>
+        <span style="margin:0 21px"><fa-icon [icon]="faCircleChevronRightIcon"></fa-icon></span><span>Administrar
+            cursos</span>
+    </div>
+</div>
+<div class="scrollContainer">
+    <div class="courseOptions textStyle">
+        <span *ngFor="let item of [].constructor(10)" class="spanCourses hovershadow"
+            style="background-color: rgba(255, 255, 255, 0.21); margin-bottom: 20px;">
+            <div class="imageCourse" style="background-image: url('/assets/images/01.jpg')"></div>
+            <div class="contentContainer">
+                <div style="padding: 6px 0;">Influencia de las criptomonedas en la economia global</div>
+                <div style="color: rgba(255, 255, 255, 0.49);">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Eu consequat ac felis donec et odio pellentesque diam volutpat. Eu lobortis elementum nibh tellus
+                    molestie.</div>
+                <div style="display: flex;flex-direction: column;padding: 6px 0 ; color: rgba(255, 255, 255, 0.49);">
+                    <div style="display: flex; flex-direction: row;justify-content:space-between; ;">
+                        <span class="informationContainer">Creado en</span>
+                        <span class="dataContainer">2022/09/21</span>
+                    </div>
+                    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+                        <span class="informationContainer">Creado por</span>
+                        <span class="dataContainer">Juan Luiz Guerra</span>
+                    </div>
+                </div>
+                <div style="display: flex; padding: 6px 0; ">
+                    <span class="hover1">Ver detalles</span>
+                    <span class="hover1" style="margin-left: auto;">Aprobar curso</span>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="bottomContainer ">
+    <span class="bottomOptionsContainer " style="margin-right: auto;">
+        <span class="tooltip" style="cursor: pointer;">
+            <span ><a class="iconStyle" href="dashboard"><fa-icon [icon]="fausergearIcon"></fa-icon></a></span>
+            <span class="tooltiptext">Dashboard</span>
+        </span>
+        <span class="tooltip" style="cursor: pointer;">
+            <span class="iconStyle"><fa-icon [icon]="faBookOpenReaderIcon"></fa-icon></span>
+            <span class="tooltiptext">test</span>
+        </span>
+        <span class="tooltip" style="cursor: pointer;">
+            <span class="iconStyle"><fa-icon [icon]="faUserPenIcon"></fa-icon></span>
+            <span class="tooltiptext">test</span>
+        </span>
+        <span class="tooltip" style="cursor: pointer;">
+            <span class="iconStyle"><fa-icon [icon]="faBuildingIcon"></fa-icon></span>
+            <span class="tooltiptext">test</span>
+        </span>
+        <span class="tooltip" style="cursor: pointer;">
+            <span class="iconStyle"><fa-icon [icon]="faListIcon"></fa-icon></span>
+            <span class="tooltiptext">test</span></span>
+        <span class="tooltip" style="cursor: pointer;">
+            <span class="iconStyle"><fa-icon [icon]="faFileContractIcon"></fa-icon></span>
+            <span class="tooltiptext">test</span>
+        </span>
+    </span>
+    <span class="bottomOptionsContainer">
+        <span style="margin: 0;"><fa-icon [icon]="facirclechevrondownIcon"></fa-icon></span>
+        <span style="font-size: 12px;margin-left: 0;">por aprobar</span>
+    </span>
+    <span class="bottomOptionsContainer "
+        style="background-color: rgb(96 254 254 / 58%); border-radius: 14px;margin: 0 30px; cursor: pointer;">
+        <span class="iconStyle" style="margin: unset;"><fa-icon [icon]="faMagnifyingGlassIcon"></fa-icon></span>
+    </span>
+    <span class="bottomOptionsContainer">
+        <span class="tooltip">
+            <span style="margin:unset; cursor: pointer;"><a class="opacityIcon" href="login-course"><fa-icon
+                        [icon]="faCircleUserIcon"></fa-icon></a></span>
+            <span class="tooltiptext">Login</span></span>
+        <span class="tooltip">
+            <span style="margin:unset; cursor: pointer;"><a class="opacityIcon" href="">
+                    <fa-icon [icon]="faRightFromBracketIncon"></fa-icon></a></span>
+            <span class="tooltiptext">Create-course</span></span>
+    </span>
+</div> -->

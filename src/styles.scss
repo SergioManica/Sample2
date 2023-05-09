@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(to bottom right, #3b6366, #542e77);
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  
+  }
+  
+  .unselectable {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
+  .unstyledInput{
+    border: unset;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

@@ -1,0 +1,15 @@
+<div>
+    <span *ngFor="let item of [].constructor(5)">Navigation</span>
+</div>
+<span>test:{{slides[0].imageUrl}} </span>
+<span ></span>
+<div class="slideContainer">
+    <span *ngFor="let slide of slides" class="slide">
+        <div class="slideCover" style=" background-image: url({{slide.imageUrl}});"></div>
+        <div>tabs</div>
+        <div class="textCard">
+            <textarea class="unstyledInput " style="height: 80%;" [maxlength]="500" [(ngModel)]="slide.text"></textarea>
+            <div class="characterCounter">{{slide.text.length}} /500</div>
+        </div>
+    </span>
+</div>
