@@ -1,0 +1,128 @@
+<div class="fatherContainer textStyle">
+  <span>Estudiante</span>
+  <span><fa-icon class="iconStyle" [icon]="faCircleChevronRightIcon"></fa-icon></span><span>Curso</span>
+</div>
+
+<div class="midContainer">
+  <span class="spanCard">
+    <div class="insideSpancard">
+      <span class="card textStyle">
+        <div class="infoBar">
+          <span style="position: absolute; top: 4px">Progreso</span>
+          <span class="positionIcon"><fa-icon [icon]="faSpinnerIcon"></fa-icon></span>
+        </div>
+        <div class="topMetrics">0 cursos em progreso</div>
+        <div class="metrics">0 cursos finalizados</div>
+        <div class="metrics">0 cursos pendientes</div>
+      </span>
+      <span class="card textStyle">
+        <div class="infoBar">
+          <span style="position: absolute; top: 4px">Horas</span>
+          <span class="positionIcon"><fa-icon [icon]="faClockIcon"></fa-icon></span>
+        </div>
+        <div class="topMetrics">1 hora esta semana</div>
+        <div class="metrics">7 horas este mes</div>
+        <div class="metrics">21 horas totales</div>
+      </span>
+    </div>
+    <div class="fastAccess textStyle">
+      Acceso rapido
+      <div class="divScroll">
+        <div *ngFor="let item of [].constructor(6)" class="scrollSearch hovershadow"
+          style="background-color: #ffffff1a">
+          <span class="imgScrollSearch" style="background-image: url('/assets/images/galaxy01.jpg')"></span>
+          <span class="textStyle fastaccessInfo">
+            <div class="titleCourse">
+              Influencia de las monedas en la economia global
+            </div>
+            <div class="fastaccessBar">
+              <div class="styleBar"></div>
+              <span class="positionBar">21%</span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </span>
+
+  <div class="fastAccess2 textStyle">
+    Todos mis cursos
+    <div class="divGallery">
+      <span *ngFor="let item of [].constructor(10)" class="spanGallery hovershadow"
+        style="background-color: #ffffff1a; margin-bottom: 20px;">
+        <div class="photoGallery" style="background-image: url('/assets/images/galaxy01.jpg')"></div>
+        <div class="progressBar" style="position: relative">
+          <div class="positionBar2"></div>
+          <span class="positionBar">50%</span>
+        </div>
+        <div class="infoSquare">
+          <div class="textStyle" style="margin-bottom: 21px">
+            Influencia de las Criptomonedas en la economia global
+          </div>
+          <div class="textStyle opacityText" style="margin:31px 0;">
+            <div style="display: flex;">
+              <span>Fecha de inicio:</span>
+              <span style="margin-left: auto">05/01/2023</span>
+            </div>
+            <div style="display: flex">
+              <span>Fecha de termino:</span>
+              <span style="margin-left: auto">09/07/2024</span>
+            </div>
+            <div style="display: flex">
+              <span>Calificacion promedio:</span>
+              <span style="margin-left: auto">5/7</span>
+            </div>
+          </div>
+          <div class="textStyle" style="display: flex; margin-top: 21px">
+            <span class="hover1">Ver detalhes</span>
+            <span class="hover1" style="margin-left: auto">Continuar curso</span>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="bottomContainer">
+  <span class="bottomOptionsContainerLeft" style="padding-left: 90px; box-sizing: border-box">
+      <span class="tooltip" style="z-index: 2;
+      position: absolute;
+      width: 90px;
+      background-color: transparent;
+      height: 50px;
+      left: 0px;
+      border-top-left-radius: 28px;
+      border-bottom-left-radius: 28px;
+      cursor: pointer;" (click)="onClickGoToCourses()">
+        <span class="tooltiptext">Courses</span>
+      </span>
+    <span class="userGraduateIcon" style="background-color: rgb(96 254 254 / 58%);cursor: pointer;">
+      <fa-icon class="iconSize" [icon]="faUserGraduateIcon"></fa-icon></span>
+    <span class="tooltip" style="cursor:pointer">
+      <a href="" style="color:unset">
+        <fa-icon class="iconSize" [icon]="faBrainIcon"></fa-icon>
+        <span class="tooltiptext">CreateCourse </span>
+      </a>
+    </span>
+    <span>
+      <span class="tooltip" style="cursor:pointer">
+        <fa-icon class="iconSize" [icon]="faBookOpenReaderIcon"></fa-icon>
+        <span class="tooltiptext">test</span>
+      </span>
+    </span>
+  </span>
+
+  <span class="bottomOptionsContainer textStyle" style="padding: 0px 36px">
+    <span>Descargar reportes de cursos</span>
+  </span>
+  <span class="bottomOptionsContainer iconSize" style="background-color: rgb(96 254 254 / 58%); border-radius: 14px">
+    <fa-icon [icon]="faMagnifyingGlassIcon"></fa-icon>
+  </span>
+  <span class="bottomOptionsContainer" style="color: rgba(255, 255, 255, 0.458)">
+    <span class="tooltip">
+      <span><a class="iconSize" style="color: rgba(255, 255, 255, 0.458)" href="login-course"><fa-icon
+            [icon]="faCircleUserIcon"></fa-icon></a></span>
+      <span class="tooltiptext">Login</span></span>
+    <span class="iconSize"><fa-icon [icon]="faRightFromBracketIncon"></fa-icon></span>
+  </span> 
+</div> -->

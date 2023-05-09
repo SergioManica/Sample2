@@ -1,0 +1,30 @@
+<div class="background">
+    <video  [muted]="'muted'" autoplay loop class="myVideo">
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+</div>
+    <div class="fatherContainer">
+        <div class="symbol" style="background-image: url('assets/images/sophiaCircle.png');"></div>
+        <div class="credentials">
+            <div class="data">
+                <span class="spanColumn">
+                    <span class="fontStyle">E-mail</span>
+                    <span><input class="inputText" type="text"></span>
+                </span>
+                <span class="spanIcon"><fa-icon [icon]="faenvelopeIcon"></fa-icon></span>
+            </div>
+        </div>
+        <div class="credentials">
+            <div class="data">
+                <span class="spanColumn">
+                    <span class="fontStyle">Password</span>
+                    <span><input class="inputText" type="password"></span>
+                </span>
+                <span class="spanIcon"><fa-icon [icon]="faeyeIcon"></fa-icon></span>
+            </div>
+        </div>
+        <div><a class="button" href="footer/create-course">
+                <div>Entrar</div>
+            </a>
+        </div>
+    </div>

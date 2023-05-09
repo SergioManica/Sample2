@@ -1,0 +1,43 @@
+.slideContainer {
+    display: flex;
+    flex-direction: row;
+    height: 88%;
+    overflow-x: auto;
+    padding-bottom: 7%;
+    box-sizing: border-box;
+
+    .slide {
+        min-width: 280px;
+        max-width: 280px;
+        // background-color: blue;
+        margin-right: 28px;
+
+        .slideCover {
+            width: 100%;
+            height: 157.50px;
+            background-size: cover;
+            border-radius: 28px;
+            box-shadow: 3px 3px 7px #00000021;
+
+        }
+
+        .textCard {
+            background-color: #00000049;
+            padding: 14px 28px;
+            border-radius: 28px;
+            height: 280px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+
+            .characterCounter {
+                color: #6fb7bf;
+                font-weight: 600;
+                margin-left: auto;
+                margin-top: auto;
+            }
+        }
+
+    }
+
+}

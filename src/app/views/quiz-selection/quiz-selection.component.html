@@ -1,0 +1,60 @@
+<div class="fatherContainer textStyle">
+    <span>Estudiante</span>
+    <span><fa-icon class="iconStyle" [icon]="faCircleChevronRightIcon"></fa-icon></span>
+    <span>Curso</span>
+    <span><fa-icon class="iconStyle" [icon]="faCircleChevronRightIcon"></fa-icon></span>
+    <span>Influencia de las criptomonedas en la economia global</span>
+</div>
+<div class="midContainer">
+    <span class="firstContainer">
+        <div class="progressBar">
+            <span class="capsule capsuleColor"></span>
+            <span class="capsule capsuleColor"></span>
+            <span class="capsule capsuleColor"></span>
+            <span class="capsule capsuleColor"></span>
+            <span class="capsule"></span>
+            <span class="capsule"></span>
+        </div>
+        <div class="quizContainer">
+            <div class="question">Cuales de los siguientes elementos de la tabla periodica petenecen al grupo de gases
+                nobles?</div>
+            <div class="instruction">Escoje hasta 3 opciones{{indexSelectedResponse}}</div>
+            <div class="answers">
+                <span *ngFor="let item of [].constructor(5), let indexResponse = index " class="pillContainer"
+                    [ngClass]="{selectedStyleBorder:indexSelectedResponse == indexResponse }" (click)="onClickResponse(indexResponse)">
+                    <span class="button" style=" margin: 0 12px;"></span>
+                    <span style="font-size: 12px;">Elemento</span>
+                </span>
+            </div>
+            <div class="back-or-next">
+                <span class="pillContainer2">Anterior</span>
+                <span class="pillContainer2">Siguiente</span>
+            </div>
+        </div>
+    </span>
+    <span class="secondContainer">
+        <div class="sections">
+            <div class="sectionName">Secction 1</div>
+            <div class="sectionTitle">Titulo de la seccion 1</div>
+            <div class="sectionOptions">
+                <div *ngFor="let item of [].constructor(5)" class="pillContainer3 selectedStyleBorder">
+                    <span class="button"></span>
+                    <span class="textPillContainer3">orientaciones generales</span>
+                    <span><fa-icon [icon]="faFileLinesIcon"></fa-icon></span>
+                </div>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="sectionName">Secction 2</div>
+            <div class="sectionTitle">Titulo de la seccion 2</div>
+            <div class="sectionOptions">
+                <div *ngFor="let item of [].constructor(5)" class="pillContainer3 selectedStyleBorder ">
+                    <span class="button"></span>
+                    <span class="textPillContainer3">orientaciones generales</span>
+                    <span><fa-icon [icon]="faVideoIcon"></fa-icon></span>
+                </div>
+            </div>
+        </div>
+    </span>
+
+</div>

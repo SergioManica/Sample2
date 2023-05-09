@@ -1,0 +1,201 @@
+.fatherContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+
+    * {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+.textStyle {
+    color: #ffffffc2;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.midContainer {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 84vh;
+    margin-right: 25px;
+    margin-left: 45px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+.progressBar {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    width: 70vw;
+    height: 7vh;
+    border-radius: 21px;
+    margin-bottom: 21px;
+    align-items: center;
+}
+.capsule{
+    background-color: rgba(192, 192, 192, 0.416);
+    border-radius: 21px;
+    height: 3vh;
+    width: 8.5vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.capsuleColor{
+    background-color: #bc88c9;
+}
+
+
+.quizContainer {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    height: 68.5vh;
+    width: 70vw;
+    border-radius: 21px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question{
+    background-color: rgba(192, 192, 192, 0.416);
+    height: 11vh;
+    width: 67vw;
+    border-radius: 30px;
+    margin-top: 28px; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+.instruction{
+    color: rgba(255, 255, 255, 0.416);
+    margin-top: 21px;
+    margin-bottom: 31px;
+    font-size: 12px;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 40vw;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.pillContainer{
+    background-color: rgba(192, 192, 192, 0.416);
+    height: 7vh;
+    width: 18vw;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.back-or-next{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-top: 35px; 
+}
+.pillContainer2{
+    background-color: rgba(192, 192, 192, 0.416);
+    height: 7vh;
+    width: 12vw;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin: 0 21px;
+    cursor: pointer;
+}
+.secondContainer {
+    display: flex;
+    flex-direction: column;
+    height: 78.5vh;
+    width: fit-content;
+    flex-flow: wrap;
+    overflow: auto;
+    margin-left: 30px;
+}
+
+.sections {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 18vw;
+    border-radius: 21px;
+    margin-bottom: 24px;
+    align-items: center;
+    
+}
+.sectionName{
+    color: rgba(255, 255, 255, 0.416);
+    font-size: 12px;
+    height: fit-content;
+    width: 88%;
+    margin-bottom: 12px;
+    margin-top: 21px;
+}
+.sectionTitle{
+    font-size: 11px;
+    height: fit-content;
+    width: 85%;
+    margin-bottom: 21px;
+}
+.sectionOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 88%;
+}
+.pillContainer3{
+    display: flex;
+    background-color: rgba(192, 192, 192, 0.416);
+    height: -moz-fit-content;
+    min-height: 6vh;
+    width: 100%;
+    border-radius: 21px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.textPillContainer3{
+font-size: 12px;
+text-align: center;
+}
+
+.button{
+    height: 21px;
+    width: 21px;
+    border: solid 1px white;
+    border-radius: 100%;
+}
+.selectedStyleBorder{
+    border: solid 1px white;
+    .button{
+        background-color:aqua ;
+        box-shadow: 0px 0px 10px aqua;
+    }
+}
+// .button.selectedStyleBorder{
+//     border: solid 1px white;
+//     background-color:aqua ;
+//     box-shadow: 10px 5px 5px aqua;
+    
+// }
+
