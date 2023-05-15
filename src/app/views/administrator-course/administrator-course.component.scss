@@ -17,8 +17,8 @@
 }
 
 .courseOptions {
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   overflow: auto;
 }
 
